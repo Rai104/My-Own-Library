@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #f0ebeb;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Styling for the account header */
+.app-header {
+    background-color: #f0ebeb;
+    height: 60px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 10;
+}
+
+#accountButton {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#accountButton:hover {
+    background-color: #3b5984;
+}
+
+/* Styling for the main layout */
+.app-layout {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+/* Styling for the navigation panel */

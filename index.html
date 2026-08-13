@@ -7,6 +7,43 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- Account Button / Navigation -->
+         <header class="app-header">
+            <button id="accountButton"> 👤 My Account</button>
+         </header>
+
+         <div class="app-layout">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <button id="navAddBook" class="nav-button">Add a Series</button>
+                <button id="navAddShelf" class="nav-button">Add a Bookshelf</button>
+                <button id="navViewLibrary" class="nav-button">View Library</button>
+                <button id="navDarkMode" class="nav-button">Dark Mode</button>
+            </aside>
+
+            <!-- Panel to Slide -->
+             <div id="sidePanel">
+                <button id="closePanel">Close</button>
+                <div id="panelContent"></div>
+         </div>
+
+         <!-- Main Content -->
+          <main class="main-content">
+            <h2 id="viewShelves">Your Bookshelves</h2>
+            <div id="displayGrid">
+                <div class="shelf-card">
+                    <div class="shelf-graphic">📚</div>
+                    <p>Novels</p>
+                </div>
+                <div class="shelf-card">
+                    <div class="shelf-graphic">📖</div>
+                    <p>Non-Fiction</p>
+                </div>
+            </div>
+
+
+
+<!--
         <div class="container">
             <h1>Welcome to My Own Library!</h1>
             <p>This is a simple library application where you can keep track of your current reads.</p>
@@ -30,6 +67,8 @@
                 <ul id="seriesList"></ul>
             </div>
         </div>
+    -->
+
         <script src="app.js"></script>
     </body>
 </html>
