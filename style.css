@@ -25,7 +25,7 @@ body {
 }
 
 #accountButton {
-    background-color: #4a6fa5;
+    background-color: #296fb4;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -46,4 +46,37 @@ body {
     position: relative;
 }
 
+/* Styling for the main app layout area */
+.app-layout {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
 /* Styling for the navigation panel */
+.sidebar {
+    width: 250px;
+    background-color: #f1cdcd;
+    border-right: 1px solid #bda4a4;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-button {
+    background: transparent;
+    color: #296fb4;
+    border: none;
+    text-align: left;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nav-button:hover {
+    background-color: #296fb4;
+    color: white;
+}
