@@ -14,7 +14,7 @@ body {
 
 /* Styling for the account header */
 .app-header {
-    background-color: #f0ebeb;
+    background-color: #fff2f2;
     height: 60px;
     padding: 0px 20px;
     display: flex;
@@ -42,15 +42,11 @@ body {
 /* Styling for the main layout */
 .app-layout {
     display: flex;
+    flex-direction: row;
     flex: 1;
     position: relative;
-}
-
-/* Styling for the main app layout area */
-.app-layout {
-    display: flex;
-    flex: 1;
-    position: relative;
+    width: 100dvw;
+    height: calc(100dvh - 60px);
 }
 
 /* Styling for the navigation panel */
@@ -79,4 +75,100 @@ body {
 .nav-button:hover {
     background-color: #296fb4;
     color: white;
+}
+
+#sidePanel {
+    position: absolute;
+    top: 0;
+    left: -350px;
+    width: 320px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+    transition: left 0.3s ease;
+    padding: 20px;
+}
+
+#sidePanel.open {
+    left: 250px;
+}
+
+#closePanel {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+    color: #aaa;
+}
+
+#closePanel:hover {
+    color: #333;
+}
+
+/* Styling for the main content area */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    min-width: 0;
+}
+
+#viewShelves {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+#displayGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for the book cards */
+.shelf-card {
+    background-color: #ffffff;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    width: 200px;
+    min-width: 200px;
+    height: 260px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s;
+}
+
+.shelf-card:hover {
+    transform: translateY(-5px);
+    border-color: #4a6fa5;
+    box-shadow: 0 10px 15px -3px rgba(74,111,165,0.2);
+}
+
+.shelf-graphic {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.shelf-card p {
+    font-size: 18px;
+    color: #4d5c72;
+    font-weight: 600;
+    text-align: center;
 }
